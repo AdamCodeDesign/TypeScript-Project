@@ -4,7 +4,6 @@ var person = {
     hobbies: ["game", "sport", "chess"],
 };
 console.log(person.hobbies[2]);
-//union
 function combine(input1, input2) {
     var result;
     if (typeof input1 === "number" && typeof input2 === "number") {
@@ -15,7 +14,7 @@ function combine(input1, input2) {
     }
     return result;
 }
-var names = combine('Odo', 'Joanna');
+var names = combine('kiko', 'Joanna');
 var ages = combine(20, 50);
 console.log(names);
 console.log(ages);
