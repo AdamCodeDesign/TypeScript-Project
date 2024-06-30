@@ -14,5 +14,19 @@ let filtered: number[] = [];
 for (let value of map.values()) {
   array.push(value);
 }
-filtered = array.filter((el):el is number => typeof el === 'number' && el === 40);
+filtered = array.filter(
+  (el): el is number => typeof el === "number" && el === 40
+);
 console.log(filtered);
+
+// button
+const button = document.querySelector(".btn");
+button?.addEventListener('click', () => {
+    console.log("My name is Adam")
+})
+
+// strict
+
+function send(data:object ){
+    console.log(data)
+}
