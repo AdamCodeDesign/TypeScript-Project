@@ -1,11 +1,12 @@
-var person = {
+"use strict";
+const person = {
     name: "Adam",
     age: 40,
     hobbies: ["game", "sport", "chess"],
 };
 console.log(person.hobbies[2]);
 function combine(input1, input2) {
-    var result;
+    let result;
     if (typeof input1 === "number" && typeof input2 === "number") {
         result = input1 + input2;
     }
@@ -14,7 +15,7 @@ function combine(input1, input2) {
     }
     return result;
 }
-var names = combine('kiko', 'Joanna');
-var ages = combine(20, 50);
+const names = combine('kiko', 'Joanna');
+const ages = combine(20, 50);
 console.log(names);
 console.log(ages);
