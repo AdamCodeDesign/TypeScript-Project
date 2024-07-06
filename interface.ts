@@ -7,7 +7,7 @@ interface Person {
 let user1: Person;
 
 user1 = {
-  name: "Adam",
+  name: "David",
   age: 30,
 
   greet(phrase: string) {

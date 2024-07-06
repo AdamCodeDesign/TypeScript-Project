@@ -1,7 +1,7 @@
 "use strict";
 let user1;
 user1 = {
-    name: "Adam",
+    name: "David",
     age: 30,
     greet(phrase) {
         console.log(phrase + " " + this.name);
