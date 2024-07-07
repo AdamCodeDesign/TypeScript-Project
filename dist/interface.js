@@ -7,4 +7,15 @@ user1 = {
         console.log(phrase + " " + this.name);
     },
 };
-user1.greet('Hi! I am');
+user1.greet("Hi! I am");
+function count(element) {
+    let text = "Got no value";
+    if (element.length === 1) {
+        text = "Got 1 element";
+    }
+    else if (element.length > 1) {
+        text = "Got " + element.length + " elements";
+    }
+    return [element, text];
+}
+console.log('count: ', count('A'));

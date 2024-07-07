@@ -15,4 +15,19 @@ user1 = {
   },
 };
 
-user1.greet('Hi! I am')
+user1.greet("Hi! I am");
+
+interface Length {
+  length: number;
+}
+
+function count<T extends Length>(element: T):[T,string] {
+  let text = "Got no value";
+  if (element.length === 1) {
+    text = "Got 1 element";
+  } else if (element.length > 1) {
+    text = "Got " + element.length + " elements";
+  }
+  return [element, text];
+}
+console.log('count: ',count('A'))
